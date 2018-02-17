@@ -103,6 +103,6 @@ class LogoutView(APIView):
                 'success': 'Successfully logged out.'},
                 status=status.HTTP_200_OK
             )
-        except Exception, e:
-            print e
+        except Exception as e:
+            pass
         return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR)
