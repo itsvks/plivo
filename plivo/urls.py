@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # url(r'^api-auth/', include('rest_framework.urls'))
     url(r'^accounts/', include('accounts.urls')),
-    url(r'^contact/', include('contact.urls')),
+    url(r'^contact/', include('contact.urls', namespace='contact')),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
