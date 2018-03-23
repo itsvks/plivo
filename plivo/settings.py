@@ -28,6 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['calm-temple-28309.herokuapp.com', 'localhost']
 
+# ALLOWED_HOSTS = []
+
 
 # Application definition
 
@@ -43,6 +45,7 @@ INSTALLED_APPS = [
     'django_filters',
     'accounts.apps.AccountsConfig',
     'contact.apps.ContactConfig',
+    'rest_framework_swagger'
 ]
 
 MIDDLEWARE = [
